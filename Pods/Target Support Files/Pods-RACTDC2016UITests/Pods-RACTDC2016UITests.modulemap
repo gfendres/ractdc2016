@@ -1,0 +1,6 @@
+framework module Pods_RACTDC2016UITests {
+  umbrella header "Pods-RACTDC2016UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
