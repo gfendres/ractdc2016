@@ -46,7 +46,7 @@ class BeerViewController: UIViewController {
                 return 0
             }
         
-        personDrunkImage.rac_image <~ beerViewModel.drunkImage
+        personDrunkImage.rac_image <~ beerViewModel.userImage
         
         //Another way to binding
         beerViewModel.quantity.signal.observeNext { value in

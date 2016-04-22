@@ -12,8 +12,8 @@ import ReactiveCocoa
 class BeerViewModel {
     
     var quantity: MutableProperty<Int> = MutableProperty<Int>(0)
-    var userName: MutableProperty<String> = MutableProperty<String>.init("")
-    var drunkImage: MutableProperty<UIImage?> = MutableProperty<UIImage?>.init(UIImage(named: "beerImage1")!)
+    private(set) var userName: MutableProperty<String> = MutableProperty<String>.init("")
+    private(set) var userImage: MutableProperty<UIImage?> = MutableProperty<UIImage?>.init(UIImage(named: "beerImage1")!)
     
     init () {
         quantity.producer
@@ -27,7 +27,7 @@ class BeerViewModel {
             .map({ value in
                 self.imageForBeer(value).on(
                     next: { image in
-                        self.drunkImage.value = image
+                        self.userImage.value = image
                     }, failed: { error in
                         print(error)
                     }, completed: {
