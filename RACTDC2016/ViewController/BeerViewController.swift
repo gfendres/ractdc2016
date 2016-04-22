@@ -39,7 +39,6 @@ class BeerViewController: UIViewController {
         
         beerViewModel.quantity <~ beerQuantitySliderProducer
             .ignoreError()
-//            .throttle(1, onScheduler: QueueScheduler.mainQueueScheduler)
             .map { slider in
                 if let sliderValue = slider as? UISlider {
                     return Int(sliderValue.value)
@@ -48,6 +47,8 @@ class BeerViewController: UIViewController {
             }
         
         personDrunkImage.rac_image <~ beerViewModel.drunkImage
+        
+        //Another way to binding
         beerViewModel.quantity.signal.observeNext { value in
             self.quantityField.text = String(value)
         }

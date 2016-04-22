@@ -10,6 +10,9 @@
 		084C04B66746D2E8E6DC857F /* Pods_RACTDC2016UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E10D0FE8FEC07E01023A22 /* Pods_RACTDC2016UITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AD1C621C33FA809C3DAEEB66 /* Pods_RACTDC2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B08BC93BBA1094FE4E6E54 /* Pods_RACTDC2016.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CD94E96F4650BEEB52037827 /* Pods_RACTDC2016Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E08A24B361CE9741DCAB5B /* Pods_RACTDC2016Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D1CB3BF01CC4405B0004551F /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB3BEF1CC4405B0004551F /* Beer.swift */; };
+		D1CB3BF11CC4405B0004551F /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB3BEF1CC4405B0004551F /* Beer.swift */; };
+		D1CB3BF31CC443660004551F /* UserViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB3BF21CC443660004551F /* UserViewModelTest.swift */; };
 		D1E8AF8F1CBAD5C800E3E12D /* SignalProducerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E8AF8E1CBAD5C800E3E12D /* SignalProducerExtension.swift */; };
 		D1EF41201CB1DFC10054E88A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF411F1CB1DFC10054E88A /* UserViewModel.swift */; };
 		D1EF41211CB1DFC10054E88A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF411F1CB1DFC10054E88A /* UserViewModel.swift */; };
@@ -54,6 +57,8 @@
 		982A652314B54508FC9A79DC /* Pods-RACTDC2016UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACTDC2016UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACTDC2016UITests/Pods-RACTDC2016UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8E08A24B361CE9741DCAB5B /* Pods_RACTDC2016Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACTDC2016Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B08BC93BBA1094FE4E6E54 /* Pods_RACTDC2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACTDC2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1CB3BEF1CC4405B0004551F /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Beer.swift; path = Model/Beer.swift; sourceTree = "<group>"; };
+		D1CB3BF21CC443660004551F /* UserViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModelTest.swift; sourceTree = "<group>"; };
 		D1E8AF8E1CBAD5C800E3E12D /* SignalProducerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignalProducerExtension.swift; path = Extensions/SignalProducerExtension.swift; sourceTree = "<group>"; };
 		D1EF411F1CB1DFC10054E88A /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserViewModel.swift; path = ViewModel/UserViewModel.swift; sourceTree = "<group>"; };
 		D1EF41221CB1E1590054E88A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				D1EF41221CB1E1590054E88A /* User.swift */,
+				D1CB3BEF1CC4405B0004551F /* Beer.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 		D1EF411E1CB16C650054E88A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D1EFF2191CB084A1004799F3 /* ViewController.swift */,
 				D1EFF1981CB9A47E004D9EB2 /* BeerViewController.swift */,
 			);
 			name = ViewController;
@@ -180,7 +187,6 @@
 				D1EF411D1CB16C5F0054E88A /* ViewModel */,
 				D1EF411C1CB16C590054E88A /* Model */,
 				D1EFF2171CB084A1004799F3 /* AppDelegate.swift */,
-				D1EFF2191CB084A1004799F3 /* ViewController.swift */,
 				D1EFF21B1CB084A1004799F3 /* Main.storyboard */,
 				D1EFF21E1CB084A1004799F3 /* Assets.xcassets */,
 				D1EFF2201CB084A1004799F3 /* LaunchScreen.storyboard */,
@@ -194,6 +200,7 @@
 			children = (
 				D1EFF22C1CB084A2004799F3 /* RACTDC2016Tests.swift */,
 				D1EFF22E1CB084A2004799F3 /* Info.plist */,
+				D1CB3BF21CC443660004551F /* UserViewModelTest.swift */,
 			);
 			path = RACTDC2016Tests;
 			sourceTree = "<group>";
@@ -483,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EFF19B1CB9BBA5004D9EB2 /* BeerViewModel.swift in Sources */,
+				D1CB3BF01CC4405B0004551F /* Beer.swift in Sources */,
 				D1EF41231CB1E1590054E88A /* User.swift in Sources */,
 				D1EFF21A1CB084A1004799F3 /* ViewController.swift in Sources */,
 				D1EFF1991CB9A47E004D9EB2 /* BeerViewController.swift in Sources */,
@@ -498,7 +506,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1EFF22D1CB084A2004799F3 /* RACTDC2016Tests.swift in Sources */,
+				D1CB3BF31CC443660004551F /* UserViewModelTest.swift in Sources */,
 				D1EF41211CB1DFC10054E88A /* UserViewModel.swift in Sources */,
+				D1CB3BF11CC4405B0004551F /* Beer.swift in Sources */,
 				D1EF41281CB203860054E88A /* UIKitExtensions.swift in Sources */,
 				D1EF41241CB1E1590054E88A /* User.swift in Sources */,
 			);

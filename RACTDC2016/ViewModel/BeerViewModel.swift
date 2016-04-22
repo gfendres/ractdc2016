@@ -16,21 +16,30 @@ class BeerViewModel {
     var drunkImage: MutableProperty<UIImage?> = MutableProperty<UIImage?>.init(UIImage(named: "beerImage1")!)
     
     init () {
-        quantity.producer.startWithNext { value in
-            print(value)
-            self.imageForBeer(value)
-                .flatMap(FlattenStrategy.Latest) { image in SignalProducer.init(value: image) }
-                .on(next: { image in self.drunkImage.value = image },
-                    failed: { error in print(error) },
-                    completed: { print("Image download completed") })
-                .start()
-        }
-        
+        quantity.producer
+            .promoteErrors(NSError)
+            .skipRepeats()
+//            .map(self.imageForBeer)
+//            .flatten(FlattenStrategy.Concat)
+//            .map { value in
+//                self.imageForBeer(value).single()
+//            }
+            .map({ value in
+                self.imageForBeer(value).on(
+                    next: { image in
+                        self.drunkImage.value = image
+                    }, failed: { error in
+                        print(error)
+                    }, completed: {
+                        print("Image download Completed")
+                }).start()
+            }).start()
     }
     
     func imageForBeer(quantity: Int) -> SignalProducer<UIImage?, NSError> {
         return SignalProducer { observe, disposable in
             guard let image: UIImage = UIImage(named: "beerImage\(quantity)") else {
+                observe.sendNext(UIImage(named: "beerImage1"))
                 observe.sendFailed(NSError.init(domain: "com.rac.imageError", code: 001, userInfo: nil))
                 observe.sendInterrupted()
                 return
@@ -38,7 +47,6 @@ class BeerViewModel {
             observe.sendNext(image)
             observe.sendCompleted()
             }.delay(1, onScheduler: QueueScheduler.mainQueueScheduler)
-
     }
     
 }

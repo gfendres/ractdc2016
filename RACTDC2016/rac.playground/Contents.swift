@@ -65,3 +65,14 @@ text.modify { t in t + "CC" }
 
 print(text.value)
 
+let myObserver: Observer<Int,NSError> = Observer<Int,NSError> { event in
+    switch event {
+    case let .Next(next):
+        print(next)
+    case .Completed:
+        print("Complted")
+    default:
+        print("Default")
+    }
+}
+

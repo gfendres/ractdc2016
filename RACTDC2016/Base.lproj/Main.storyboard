@@ -102,8 +102,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-o4-R3B">
-                                <rect key="frame" x="0.0" y="0.0" width="1500" height="1894"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-o4-R3B">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantas cervejas você bebeu ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFh-mI-RAo">
                                 <rect key="frame" x="20" y="28" width="560" height="30"/>
@@ -143,14 +143,18 @@
                             <constraint firstItem="eFh-mI-RAo" firstAttribute="top" secondItem="eTd-ad-gZY" secondAttribute="bottom" constant="8" id="60O-72-ZOs"/>
                             <constraint firstAttribute="trailing" secondItem="eFh-mI-RAo" secondAttribute="trailing" constant="20" id="8dB-KE-H2o"/>
                             <constraint firstItem="zF5-Ea-HEt" firstAttribute="top" secondItem="nY5-SL-TZX" secondAttribute="bottom" id="8qm-Jk-NlD"/>
+                            <constraint firstItem="Awq-o4-R3B" firstAttribute="leading" secondItem="XAk-Rd-Ele" secondAttribute="leading" id="BXM-Nd-FYW"/>
+                            <constraint firstAttribute="trailing" secondItem="Awq-o4-R3B" secondAttribute="trailing" id="FDv-JA-fYg"/>
                             <constraint firstItem="iYC-tR-dxk" firstAttribute="top" secondItem="eFh-mI-RAo" secondAttribute="bottom" constant="8" id="GMN-Od-kmW"/>
                             <constraint firstItem="eFh-mI-RAo" firstAttribute="leading" secondItem="XAk-Rd-Ele" secondAttribute="leading" constant="20" id="QEG-b5-esl"/>
                             <constraint firstItem="ORc-5x-PzF" firstAttribute="leading" secondItem="XAk-Rd-Ele" secondAttribute="leading" constant="20" id="SIa-Ft-bhF"/>
                             <constraint firstAttribute="trailing" secondItem="nY5-SL-TZX" secondAttribute="trailing" id="YPi-qQ-aoO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iYC-tR-dxk" secondAttribute="trailing" id="ZhB-vZ-d85"/>
                             <constraint firstItem="ORc-5x-PzF" firstAttribute="top" secondItem="iYC-tR-dxk" secondAttribute="bottom" constant="8" id="a9q-V2-UPL"/>
+                            <constraint firstAttribute="bottom" secondItem="Awq-o4-R3B" secondAttribute="bottom" id="aSU-Uw-tTQ"/>
                             <constraint firstItem="nY5-SL-TZX" firstAttribute="top" secondItem="ORc-5x-PzF" secondAttribute="bottom" constant="8" id="hfi-Ql-3ID"/>
                             <constraint firstAttribute="trailing" secondItem="ORc-5x-PzF" secondAttribute="trailing" constant="20" id="mqB-oi-ASA"/>
+                            <constraint firstItem="Awq-o4-R3B" firstAttribute="top" secondItem="XAk-Rd-Ele" secondAttribute="top" id="n1B-54-v0C"/>
                             <constraint firstItem="nY5-SL-TZX" firstAttribute="leading" secondItem="XAk-Rd-Ele" secondAttribute="leading" id="pVd-3b-ZuC"/>
                         </constraints>
                         <variation key="default">

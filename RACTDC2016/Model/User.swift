@@ -6,8 +6,7 @@
 //  Copyright © 2016 ArcTouch. All rights reserved.
 //
 
-import AVFoundation
-import ReactiveCocoa
+import Foundation
 
 class User: NSObject {
     var name: String?

@@ -23,34 +23,26 @@ class ViewController: UIViewController {
         let textSignal: RACSignal = nameTextField.rac_textSignal()
         let textSignalProducer: SignalProducer = textSignal.toSignalProducer().observeOn(UIScheduler())
 
-        userViewModel.searchText <~ textSignalProducer
+        userViewModel.username <~ textSignalProducer
             .ignoreError()
             .map { text in text as? String }
             .throttle(0.5, onScheduler: QueueScheduler.mainQueueScheduler)
         
         errorLabel.rac_text <~ userViewModel.errorMessage
-        errorLabel.rac_hidden <~ userViewModel.showError
-        enterButton.rac_enabled <~ userViewModel.enableButton
+        errorLabel.rac_hidden <~ userViewModel.usernameCorrect
+        enterButton.rac_hidden <~ userViewModel.disableButton
 
         let buttonSignal: RACSignal = enterButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
         let buttonSignalProducer: SignalProducer = buttonSignal.toSignalProducer().observeOn(UIScheduler())
         
-        buttonSignalProducer
-            .throttle(1, onScheduler: QueueScheduler.mainQueueScheduler)
-            .take(2)
-            .on (
-                next: { object in
-                    guard let button = object as? UIButton else {
-                        return
-                    }
-                    button.tintColor = UIColor(red: 1, green: 0, blue: 0, alpha: 1)
-                    button.setTitle("Are you ready", forState: UIControlState.Normal)
-                },
+        buttonSignalProducer.startWithNext { object in
+            self.userViewModel.saveUser().on(
                 completed: {
                     self.performSegueWithIdentifier("beerControllerSegue", sender: self)
-            })
-            .start()
-        
+                }, failed: { error in
+                    print(error)
+                }).start()
+        }
     }
 
 }

@@ -8,38 +8,86 @@
 
 import AVFoundation
 import ReactiveCocoa
+import enum Result.NoError
 
 let maxCharacters = 15
 let minCharacters = 5
+let maxCharactersError = "Seu nome deve ter no máx \(maxCharacters) characteres"
+let minCharactersError = "Seu nome deve ter no min \(minCharacters) characteres"
+let unavailableUsernameError = "Este nome não pode ser usado"
 
-class UserViewModel {
+internal class UserViewModel {
     
-    var searchText: MutableProperty<String?> = MutableProperty<String?>("")
-    var errorMessage: MutableProperty<String> = MutableProperty<String>("")
-    var showError: MutableProperty<Bool> = MutableProperty<Bool>(false)
-    var enableButton: MutableProperty<Bool> = MutableProperty<Bool>(false)
+    var username: MutableProperty<String?> = MutableProperty<String?>("")
+    
+    private(set) var errorMessage: MutableProperty<String> = MutableProperty<String>("")
+    private(set) var usernameCorrect: MutableProperty<Bool> = MutableProperty<Bool>(false)
+    private(set) var disableButton: MutableProperty<Bool> = MutableProperty<Bool>(true)
 
-    private var user: User?
+    private lazy var user: User = {
+       return User()
+    }()
     
     init() {
-        searchText.signal
-            .observeNext { next in
-                print(next)
-                let validText = next?.characters.count < maxCharacters
-                             && next?.characters.count > minCharacters
-                self.enableButton.value = validText
-                self.showError.value = validText
+        username.signal.observeNext { next in
+            print(next)
+            let validText = self.isUsernameValid(next)
+            self.disableButton.value = !validText
+            self.usernameCorrect.value = validText
+            self.user.name = next
+            self.errorMessage.value = self.errorMessageForUsername(next!)
         }
-        searchText.signal
-            .filter { text in text?.characters.count > maxCharacters }
-            .observeNext { next in
-                self.errorMessage.value = "Seu nome deve ter no máx \(maxCharacters) characteres"
+    }
+    
+    //MARK: Validation
+    
+    func isUsernameValid(username: String?) -> Bool {
+        if let username = username where !username.isEmpty {
+            return username.characters.count > minCharacters &&
+                username.characters.count < maxCharacters
         }
-        searchText.signal
-            .filter { text in text?.characters.count < minCharacters }
-            .observeNext { next in
-                self.errorMessage.value = "Seu nome deve ter no min \(minCharacters) characteres"
-        }
-        
+        return false
+    }
+    
+    func errorMessageForUsername(username: String) -> String {
+        return filterMinCharacters(username) ?
+            minCharactersError :
+            filterMaxCharacters(username) ?
+            maxCharactersError : ""
+    }
+    
+    func filterMaxCharacters(text: String?) -> Bool {
+        return text!.characters.count > maxCharacters
+    }
+    
+    func filterMinCharacters(text: String?) -> Bool {
+        return text!.characters.count < minCharacters
+    }
+    
+    //MARK: User Operations
+    
+    func saveUser() -> SignalProducer<(), NSError> {
+        return self.saveUser(self.user)
+    }
+    
+    private func saveUser(user: User) -> SignalProducer<(), NSError> {
+        self.disableButton.value = true
+        return SignalProducer { observe, disposable in
+            if (user.name == "Darth Vader") {
+                self.errorMessage.value = unavailableUsernameError
+                observe.sendFailed(self.error())
+                observe.sendInterrupted()
+            }
+            observe.sendCompleted()
+            }
+            .delay(3, onScheduler: QueueScheduler.mainQueueScheduler)
+    }
+    
+    //MARK: Errors
+    
+    private func error() -> NSError {
+        return NSError.init(domain: "com.rac.userSaveError",
+                            code: 002,
+                            userInfo: nil)
     }
 }
