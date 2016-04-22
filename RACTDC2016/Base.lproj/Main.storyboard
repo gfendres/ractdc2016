@@ -105,7 +105,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-o4-R3B">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantas cervejas você bebeu ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFh-mI-RAo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantas cervejas você bebeu ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFh-mI-RAo">
                                 <rect key="frame" x="20" y="28" width="560" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3EJ-di-M0B"/>
@@ -130,10 +130,10 @@
                                 <color key="maximumTrackTintColor" red="1" green="0.80070656671630114" blue="0.2299271643946551" alpha="0.86584051724137934" colorSpace="calibratedRGB"/>
                                 <color key="thumbTintColor" red="0.9882352941176471" green="0.6470588235294118" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nY5-SL-TZX">
-                                <rect key="frame" x="0.0" y="142" width="600" height="458"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nY5-SL-TZX">
+                                <rect key="frame" x="0.0" y="200" width="600" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="458" id="vD9-r7-GyM"/>
+                                    <constraint firstAttribute="height" constant="400" id="SEv-6z-bAR"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -143,6 +143,7 @@
                             <constraint firstItem="eFh-mI-RAo" firstAttribute="top" secondItem="eTd-ad-gZY" secondAttribute="bottom" constant="8" id="60O-72-ZOs"/>
                             <constraint firstAttribute="trailing" secondItem="eFh-mI-RAo" secondAttribute="trailing" constant="20" id="8dB-KE-H2o"/>
                             <constraint firstItem="zF5-Ea-HEt" firstAttribute="top" secondItem="nY5-SL-TZX" secondAttribute="bottom" id="8qm-Jk-NlD"/>
+                            <constraint firstItem="nY5-SL-TZX" firstAttribute="top" secondItem="ORc-5x-PzF" secondAttribute="bottom" priority="750" constant="30" id="9ww-fx-jh4"/>
                             <constraint firstItem="Awq-o4-R3B" firstAttribute="leading" secondItem="XAk-Rd-Ele" secondAttribute="leading" id="BXM-Nd-FYW"/>
                             <constraint firstAttribute="trailing" secondItem="Awq-o4-R3B" secondAttribute="trailing" id="FDv-JA-fYg"/>
                             <constraint firstItem="iYC-tR-dxk" firstAttribute="top" secondItem="eFh-mI-RAo" secondAttribute="bottom" constant="8" id="GMN-Od-kmW"/>
@@ -159,6 +160,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="9ww-fx-jh4"/>
                                 <exclude reference="hfi-Ql-3ID"/>
                             </mask>
                         </variation>
