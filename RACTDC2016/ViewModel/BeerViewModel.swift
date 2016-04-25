@@ -8,6 +8,7 @@
 
 import Foundation
 import ReactiveCocoa
+import enum Result.NoError
 
 class BeerViewModel {
     
@@ -17,35 +18,22 @@ class BeerViewModel {
     
     init () {
         quantity.producer
-            .promoteErrors(NSError)
-            .skipRepeats()
-//            .map(self.imageForBeer)
-//            .flatten(FlattenStrategy.Concat)
-//            .map { value in
-//                self.imageForBeer(value).single()
-//            }
-            .map({ value in
-                self.imageForBeer(value).on(
-                    next: { image in
-                        self.userImage.value = image
-                    }, failed: { error in
-                        print(error)
-                    }, completed: {
-                        print("Image download Completed")
-                }).start()
-            }).start()
+            .skipRepeats() // Skip the same value. Ex: 1, 1, 1, 2, 2, 2. It gets only 1, 2
+            .flatMap(FlattenStrategy.Latest, transform: self.imageForBeer) // Change to Merge in order to get multiple images.
+            .startWithNext { image in
+                print("Image Received")
+                self.userImage.value = image
+            }
     }
     
-    func imageForBeer(quantity: Int) -> SignalProducer<UIImage?, NSError> {
+    func imageForBeer(quantity: Int) -> SignalProducer<UIImage?, NoError> {
         return SignalProducer { observe, disposable in
+            print("Image for Quantity: \(quantity)")
             guard let image: UIImage = UIImage(named: "beerImage\(quantity)") else {
-                observe.sendNext(UIImage(named: "beerImage1"))
-                observe.sendFailed(NSError.init(domain: "com.rac.imageError", code: 001, userInfo: nil))
-                observe.sendInterrupted()
                 return
             }
             observe.sendNext(image)
-            observe.sendCompleted()
+//            observe.sendCompleted()
             }.delay(1, onScheduler: QueueScheduler.mainQueueScheduler)
     }
     
