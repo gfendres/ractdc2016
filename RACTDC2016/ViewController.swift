@@ -30,19 +30,17 @@ class ViewController: UIViewController {
         
         errorLabel.rac_text <~ userViewModel.errorMessage
         errorLabel.rac_hidden <~ userViewModel.usernameCorrect
-        enterButton.rac_hidden <~ userViewModel.disableButton
+        enterButton.rac_hidden <~ userViewModel.hiddenButton
 
-        let buttonSignal: RACSignal = enterButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
-        let buttonSignalProducer: SignalProducer = buttonSignal.toSignalProducer().observeOn(UIScheduler())
+        let buttonSignalProducer: SignalProducer = enterButton.rac_touchUpInside()
         
-        buttonSignalProducer.startWithNext { object in
-            self.userViewModel.saveUser().on(
-                completed: {
-                    self.performSegueWithIdentifier("beerControllerSegue", sender: self)
-                }, failed: { error in
-                    print(error)
-                }).start()
-        }
+        buttonSignalProducer
+            .flatMap(FlattenStrategy.Latest,
+            transform: userViewModel.enterDidClick)
+            .startWithNext { username in
+                print(username)
+                self.performSegueWithIdentifier("beerControllerSegue", sender: self)
+            }
     }
 
 }

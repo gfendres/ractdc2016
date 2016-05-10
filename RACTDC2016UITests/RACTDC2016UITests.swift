@@ -28,9 +28,27 @@ class RACTDC2016UITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testEnterCorrectName() {
+        let app = XCUIApplication()
+        let textField = app.textFields["username"]
+        textField.tap()
+        textField.typeText("Anakin")
+        app.buttons["ENTER"].tap()
+        let error = app.staticTexts["error"]
+        
+        XCTAssert(!error.hittable)
+    }
+    
+    func testEnterWrongName() {
+        let app = XCUIApplication()
+        let textField = app.textFields["username"]
+        textField.tap()
+        textField.typeText("Darth Vader")
+        app.buttons["ENTER"].tap()
+        
+        let error = app.staticTexts["error"]
+        
+        XCTAssert(error.hittable)
     }
     
 }

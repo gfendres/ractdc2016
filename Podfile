@@ -10,7 +10,4 @@ target 'RACTDC2016Tests' do
 pod “ReactiveCocoa”
 end
 
-target 'RACTDC2016UITests' do
-pod “ReactiveCocoa”
-end
 

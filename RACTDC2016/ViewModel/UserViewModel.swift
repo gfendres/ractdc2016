@@ -22,21 +22,21 @@ internal class UserViewModel {
     
     private(set) var errorMessage: MutableProperty<String> = MutableProperty<String>("")
     private(set) var usernameCorrect: MutableProperty<Bool> = MutableProperty<Bool>(false)
-    private(set) var disableButton: MutableProperty<Bool> = MutableProperty<Bool>(true)
+    private(set) var hiddenButton: MutableProperty<Bool> = MutableProperty<Bool>(true)
 
     private lazy var user: User = {
        return User()
     }()
     
     init() {
-        username.signal.observeNext { next in
-            print(next)
-            let validText = self.isUsernameValid(next)
-            self.disableButton.value = !validText
-            self.usernameCorrect.value = validText
+        
+        username.signal.filter(isUsernameValid).observeNext { next in
             self.user.name = next
-            self.errorMessage.value = self.errorMessageForUsername(next!)
+            self.usernameCorrect.value = true
         }
+        usernameCorrect <~ username.signal.map(isUsernameValid)
+        hiddenButton <~ username.signal.map(isUsernameValid).map{!$0}
+        errorMessage <~ username.signal.map(errorMessageForUsername)
     }
     
     //MARK: Validation
@@ -49,7 +49,7 @@ internal class UserViewModel {
         return false
     }
     
-    func errorMessageForUsername(username: String) -> String {
+    func errorMessageForUsername(username: String?) -> String {
         return filterMinCharacters(username) ?
             minCharactersError :
             filterMaxCharacters(username) ?
@@ -66,21 +66,21 @@ internal class UserViewModel {
     
     //MARK: User Operations
     
-    func saveUser() -> SignalProducer<(), NSError> {
-        return self.saveUser(self.user)
+    func enterDidClick(object: UIButton) -> SignalProducer<String, NSError> {
+        return saveUser(self.user)
     }
     
-    private func saveUser(user: User) -> SignalProducer<(), NSError> {
-        self.disableButton.value = true
+    private func saveUser(user: User) -> SignalProducer<String, NSError> {
+        self.hiddenButton.value = true
         return SignalProducer { observe, disposable in
+
             if (user.name == "Darth Vader") {
                 self.errorMessage.value = unavailableUsernameError
-                observe.sendFailed(self.error())
-                observe.sendInterrupted()
+                self.usernameCorrect.value = false
+                return
             }
-            observe.sendCompleted()
-            }
-            .delay(3, onScheduler: QueueScheduler.mainQueueScheduler)
+            observe.sendNext(user.name!)
+        }.delay(3, onScheduler: QueueScheduler.mainQueueScheduler)
     }
     
     //MARK: Errors

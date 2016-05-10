@@ -10,68 +10,6 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>008C6729AB4558E6BE7B302A03F6BE4F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B5940326DCB1687F1E92A3DBF77ACBC9</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-RACTDC2016UITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-RACTDC2016UITests/Pods-RACTDC2016UITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_RACTDC2016UITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>009328F457BE6B4E17CC5E0C449A05CF</key>
 		<dict>
 			<key>fileRef</key>
@@ -202,19 +140,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>03F300DF4FB0A73D3E7C68525A3DC0C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>040226BA152B11AE694F4452215BB804</key>
 		<dict>
@@ -623,6 +548,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>1003D0B46F3FB8F6E863DBEBEFB215E5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>ReactiveCocoa</string>
+			<key>target</key>
+			<string>71A30763753701761542E851D7673201</string>
+			<key>targetProxy</key>
+			<string>5A00B2F59CE1731005446AB9DDBD7636</string>
+		</dict>
 		<key>100D08D7D8479697986731B6F61AF605</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -716,17 +652,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>10F01CD4122B2160776D68ED0ED8CA3D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>111D9D347C6C7BE9BAA922C65B2B6713</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -785,18 +710,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>13513267FE11A0C40680AD3FBF9B746F</key>
+		<key>13155B2874DD469F7FE8CE7AD0860CB0</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>71A30763753701761542E851D7673201</string>
+			<key>remoteInfo</key>
+			<string>ReactiveCocoa</string>
 		</dict>
 		<key>157DF8612C30FBF3BD8F284FB43E8FD9</key>
 		<dict>
@@ -940,19 +865,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>195A495035C6022FB74BF22794544831</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>197C0C6268AA5D42EC05A811AC8504E7</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1042,6 +954,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>1CB948E91DA6435F30E5962EEFFE7E06</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>1E4C430B961CE7B0319B1351DB0BC5B9</key>
 		<dict>
 			<key>fileRef</key>
@@ -1081,6 +1004,19 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Result-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F427BA90A2B72E8C4BE39C050FFA6D4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1148,6 +1084,19 @@
 			<string>ReactiveCocoa/Objective-C/RACDynamicSignal.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20F67AB275FFA82A50991365CA3FB1A9</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D02E08439589872996252F4061652195</string>
+			<key>remoteInfo</key>
+			<string>Result</string>
 		</dict>
 		<key>2240991749E8F8B23D05912C435ABFCE</key>
 		<dict>
@@ -1243,19 +1192,6 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>241A29835B27B1B868D6B5BBB8A3BC4E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2442C653E2FBC76FAC957584600E23DE</key>
 		<dict>
@@ -1548,13 +1484,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2EFC6FC5D0B92DF77FF05AE59995AD8D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2F19A7F7CB80D4E18DFEB662321D0F4E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>2F19A7F7CB80D4E18DFEB662321D0F4E</key>
 		<dict>
 			<key>isa</key>
@@ -1604,6 +1533,19 @@
 			<string>ReactiveCocoa/Objective-C/RACImmediateScheduler.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>307F1D28B9C894CA757E5F31D385421D</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D02E08439589872996252F4061652195</string>
+			<key>remoteInfo</key>
+			<string>Result</string>
 		</dict>
 		<key>30DCAA726FB8E94D1AF2ADF8432C6C5B</key>
 		<dict>
@@ -1773,8 +1715,8 @@
 			<array/>
 			<key>dependencies</key>
 			<array>
-				<string>508720B98051E24CB1A0FB2FA7A461BE</string>
-				<string>510740EC5E9EFDA3A39144022712C38E</string>
+				<string>4D8A8B93CD67FE1EB761BC9BE9E5307E</string>
+				<string>45BE918D4D394091438056BC8DBB21A5</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
@@ -1832,19 +1774,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>362DB6366CD6282051AA2C7B5A6791E9</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>71A30763753701761542E851D7673201</string>
-			<key>remoteInfo</key>
-			<string>ReactiveCocoa</string>
-		</dict>
 		<key>36A4C90FE1A62341C338F636D49E4BB1</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1890,6 +1819,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>373F047C6DD1BB67DE3E884AA7961AC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>37B3FE5AE1521485F5DDDDF68E5FA9DF</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1916,19 +1858,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>37EFEF4B1F5FA379B7D72631A3ACF086</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D02E08439589872996252F4061652195</string>
-			<key>remoteInfo</key>
-			<string>Result</string>
 		</dict>
 		<key>3923822993D25F968622D9FB0E4716E7</key>
 		<dict>
@@ -2085,6 +2014,20 @@
 				</array>
 			</dict>
 		</dict>
+		<key>3D69B06C4A8A34A36B47A424F7161F85</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9949150A6CDCA5EF3B84B71585DA764D</string>
+				<string>BB90BE71E9A74CC599B39FE2ED121DBF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3E0799290232CC9CFEB29615A011B10B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2202,19 +2145,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>44427FFE79240FA5916C8CF199D0F86B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>44BDAA3F23EFCC67BAFBCCF8BED7A36F</key>
 		<dict>
 			<key>children</key>
@@ -2236,18 +2166,16 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>457BBB1F2AB5DAEA856FABE2623694D0</key>
+		<key>45BE918D4D394091438056BC8DBB21A5</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Result</string>
+			<key>target</key>
+			<string>D02E08439589872996252F4061652195</string>
+			<key>targetProxy</key>
+			<string>CA70A5B1650F091E9C948F66DF974D2D</string>
 		</dict>
 		<key>46645AD42C8F582F98F58A4FD432ED3C</key>
 		<dict>
@@ -2276,6 +2204,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>46D9E598193E0EBCF569C08EC785F7D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>46E5FEF7D3156A98B32E02CB4B6F0E6C</key>
 		<dict>
@@ -2636,6 +2577,17 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>4D8A8B93CD67FE1EB761BC9BE9E5307E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>ReactiveCocoa</string>
+			<key>target</key>
+			<string>71A30763753701761542E851D7673201</string>
+			<key>targetProxy</key>
+			<string>13155B2874DD469F7FE8CE7AD0860CB0</string>
+		</dict>
 		<key>4F8B6B11A9CAE3B10597B2A07E481204</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2680,28 +2632,6 @@
 			<string>ReactiveCocoa/Objective-C/UIBarButtonItem+RACCommandSupport.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>508720B98051E24CB1A0FB2FA7A461BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>ReactiveCocoa</string>
-			<key>target</key>
-			<string>71A30763753701761542E851D7673201</string>
-			<key>targetProxy</key>
-			<string>7EF4A10187AED1A8DC480032EF0B7751</string>
-		</dict>
-		<key>510740EC5E9EFDA3A39144022712C38E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Result</string>
-			<key>target</key>
-			<string>D02E08439589872996252F4061652195</string>
-			<key>targetProxy</key>
-			<string>59EEF3887C97349F67F2267510A76D8A</string>
 		</dict>
 		<key>51ACF9BF532704E2A1717D147C345C3D</key>
 		<dict>
@@ -2941,7 +2871,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>59EEF3887C97349F67F2267510A76D8A</key>
+		<key>5A00B2F59CE1731005446AB9DDBD7636</key>
 		<dict>
 			<key>containerPortal</key>
 			<string>D41D8CD98F00B204E9800998ECF8427E</string>
@@ -2950,9 +2880,9 @@
 			<key>proxyType</key>
 			<string>1</string>
 			<key>remoteGlobalIDString</key>
-			<string>D02E08439589872996252F4061652195</string>
+			<string>71A30763753701761542E851D7673201</string>
 			<key>remoteInfo</key>
-			<string>Result</string>
+			<string>ReactiveCocoa</string>
 		</dict>
 		<key>5A0C6FE968931D888F00C9EC18DDF5BC</key>
 		<dict>
@@ -3042,19 +2972,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5ADC05D5CDF6DA83556EEC13D8428480</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>5B83996074114AA79CC866AB0D3256A9</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -3069,8 +2986,8 @@
 			<array/>
 			<key>dependencies</key>
 			<array>
-				<string>5E8F05F3C0CD8BF5EBE3F3E45646B764</string>
-				<string>8CC862D11BD0697268D6CE9073880878</string>
+				<string>1003D0B46F3FB8F6E863DBEBEFB215E5</string>
+				<string>C583492BC38C3B23FE0B933A4CD5FC2B</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
@@ -3083,36 +3000,12 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>5CC2DFC55A3C64BF7A19CAA690006F47</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>5DBE512762AB3F1F0F73EEDEE7B13A67</key>
 		<dict>
 			<key>fileRef</key>
 			<string>2AB825D23472775B1144A2EDA71DA664</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>5E8F05F3C0CD8BF5EBE3F3E45646B764</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>ReactiveCocoa</string>
-			<key>target</key>
-			<string>71A30763753701761542E851D7673201</string>
-			<key>targetProxy</key>
-			<string>7ABB530B6EF9F4E1294EE59345148C91</string>
 		</dict>
 		<key>5EA34DE43D2DA1765E120183D7912312</key>
 		<dict>
@@ -3291,6 +3184,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>634B0051F5EAE796403685091A261D3C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>636AA90F48E0671595F5C88C0C4EFAD7</key>
 		<dict>
 			<key>fileRef</key>
@@ -3321,43 +3227,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>ReactiveCocoa-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>640E6A37AFAA742FE26A191098E54877</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64B749CFAA1C196C5172CDC0705B838E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>784879A2A0228EECF67D1E53E54B25ED</string>
-				<string>90B184565E59704DE55BF2C876414D90</string>
-				<string>BF10061442C55B6C41103A9874EAC089</string>
-				<string>03F300DF4FB0A73D3E7C68525A3DC0C6</string>
-				<string>640E6A37AFAA742FE26A191098E54877</string>
-				<string>44427FFE79240FA5916C8CF199D0F86B</string>
-				<string>457BBB1F2AB5DAEA856FABE2623694D0</string>
-				<string>E4CDD681C9AFA26881DEC782AD7D0C51</string>
-				<string>B5940326DCB1687F1E92A3DBF77ACBC9</string>
-				<string>E44BEA7AB5ED19DE4121ABDE75DE8271</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-RACTDC2016UITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-RACTDC2016UITests</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3461,21 +3330,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>6EAAB3EE6B96375BA72B78357F88E47F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_RACTDC2016UITests.framework</string>
-			<key>path</key>
-			<string>Pods_RACTDC2016UITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>6EEB4411930AB37C7897CCCDE00FE9D1</key>
 		<dict>
 			<key>fileRef</key>
@@ -3551,7 +3405,7 @@
 			<array/>
 			<key>dependencies</key>
 			<array>
-				<string>B4887166AF3C4B3FB9D058F04A6DC483</string>
+				<string>BB5E632CA5071B2664FE25787A3C0F4F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
@@ -3691,19 +3545,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7660EAA6BE720C7EA5CE1DE3CDA9DD68</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>76AF096AC36C32B54DEF45B35DC78888</key>
 		<dict>
 			<key>fileRef</key>
@@ -3784,19 +3625,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>784879A2A0228EECF67D1E53E54B25ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>798CF2272E572BA91EAFC7118D63CD7E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3816,19 +3644,6 @@
 			<string>DE1448FFC3AECE72ADFFC3EE6428B430</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>7ABB530B6EF9F4E1294EE59345148C91</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>71A30763753701761542E851D7673201</string>
-			<key>remoteInfo</key>
-			<string>ReactiveCocoa</string>
 		</dict>
 		<key>7BFA64BB173FAF771B30B826021F3F06</key>
 		<dict>
@@ -3889,7 +3704,7 @@
 				<string>0F798CEA942E3E7F8427620A7D94EA00</string>
 				<string>44BDAA3F23EFCC67BAFBCCF8BED7A36F</string>
 				<string>CCA510CFBEA2D207524CDA0D73C3B561</string>
-				<string>F109EDBCAF07F348EAA900486B6B1AE4</string>
+				<string>3D69B06C4A8A34A36B47A424F7161F85</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -3911,36 +3726,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7E8C44F6F86DB0863513E3E1149F56BA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>ReactiveCocoa</string>
-			<key>target</key>
-			<string>71A30763753701761542E851D7673201</string>
-			<key>targetProxy</key>
-			<string>362DB6366CD6282051AA2C7B5A6791E9</string>
-		</dict>
 		<key>7EC3A6B968751D75E043BB526D12FEDF</key>
 		<dict>
 			<key>fileRef</key>
 			<string>4A4F8F5B8675EE5E897483C620E982EB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>7EF4A10187AED1A8DC480032EF0B7751</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>71A30763753701761542E851D7673201</string>
-			<key>remoteInfo</key>
-			<string>ReactiveCocoa</string>
 		</dict>
 		<key>7EFE9B1820500D875BAC7172D6C3436F</key>
 		<dict>
@@ -4259,19 +4050,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8A1FC820C3092B8242C74BFDCAF227D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8A41CBECBA262F75AAC5A6A1D0ADBD9C</key>
 		<dict>
 			<key>fileRef</key>
@@ -4285,30 +4063,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>8A703E1693FC03003589CC85B9F48CB3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D8D06CEF694AE56F02F772DF2896D49F</string>
-				<string>A8C0D17133B8363BB668C787A8BF6344</string>
-				<string>9E243B84BBE8921AD901B06F198D73BD</string>
-				<string>8A1FC820C3092B8242C74BFDCAF227D8</string>
-				<string>798CF2272E572BA91EAFC7118D63CD7E</string>
-				<string>A95FCD9F233F742D6322B9CE63A7069E</string>
-				<string>195A495035C6022FB74BF22794544831</string>
-				<string>D96192820A4E86066FE7771122764B2F</string>
-				<string>8CC816EDD52B044C04D7B1F644491530</string>
-				<string>FBAB4C2E9C6BB41EADC01780C56FC08E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-RACTDC2016Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-RACTDC2016Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>8AB7AF5AFCA26490C641BA922031D7A0</key>
 		<dict>
@@ -4325,34 +4079,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8C6D217CD8E967BEC4BCE28DBE672ADA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E97304D96DBB70C3BD3F6CC33EC7673F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EE4ECC1F3D2E4753BB53F456D0F9EACC</string>
-				<string>9DFA7A9451C96947A1979997FEAB93EC</string>
-				<string>A4E8AB4F48613FC8218D1187D1A6D94A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>7E8C44F6F86DB0863513E3E1149F56BA</string>
-				<string>924FE96BAE2225533A8BEA79D4E80AA2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-RACTDC2016UITests</string>
-			<key>productName</key>
-			<string>Pods-RACTDC2016UITests</string>
-			<key>productReference</key>
-			<string>6EAAB3EE6B96375BA72B78357F88E47F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
 		<key>8CC816EDD52B044C04D7B1F644491530</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4365,17 +4091,6 @@
 			<string>Pods-RACTDC2016Tests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8CC862D11BD0697268D6CE9073880878</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Result</string>
-			<key>target</key>
-			<string>D02E08439589872996252F4061652195</string>
-			<key>targetProxy</key>
-			<string>C917CCAAF321BA8C9310CCA4038CEA3A</string>
 		</dict>
 		<key>8D599DA9FE30BFAFCE4A0B8911DA3923</key>
 		<dict>
@@ -4434,6 +4149,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>901E4B5FC22C9E2C3D62F3D164A3F6A6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>906A6DA0A417651B172564139A85E5B7</key>
 		<dict>
 			<key>fileRef</key>
@@ -4453,17 +4181,6 @@
 			<string>UICollectionReusableView+RACSignalSupport.m</string>
 			<key>path</key>
 			<string>ReactiveCocoa/Objective-C/UICollectionReusableView+RACSignalSupport.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>90B184565E59704DE55BF2C876414D90</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4521,17 +4238,6 @@
 			<string>ReactiveCocoa</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>924FE96BAE2225533A8BEA79D4E80AA2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Result</string>
-			<key>target</key>
-			<string>D02E08439589872996252F4061652195</string>
-			<key>targetProxy</key>
-			<string>9613E3558422E599BCD10DE2199947BE</string>
 		</dict>
 		<key>9362AE55F2E786A8F3BE5BDEC00B3E99</key>
 		<dict>
@@ -4672,19 +4378,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9613E3558422E599BCD10DE2199947BE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D02E08439589872996252F4061652195</string>
-			<key>remoteInfo</key>
-			<string>Result</string>
-		</dict>
 		<key>963B0BBB6F317FFF0EAFBC2AD826776C</key>
 		<dict>
 			<key>fileRef</key>
@@ -4763,6 +4456,30 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>9949150A6CDCA5EF3B84B71585DA764D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E68CFFDBDBAD0C95E3DE65DF396BB589</string>
+				<string>F4BC6A4E60F26F92706FD11C4ECF0FD6</string>
+				<string>373F047C6DD1BB67DE3E884AA7961AC5</string>
+				<string>46D9E598193E0EBCF569C08EC785F7D2</string>
+				<string>111D9D347C6C7BE9BAA922C65B2B6713</string>
+				<string>A30ADE10A97C9A271239A541C817FE76</string>
+				<string>1F427BA90A2B72E8C4BE39C050FFA6D4</string>
+				<string>53BBE38D703C7E2EA67BC31D8AD7DFF6</string>
+				<string>52E9C261223018E51F4ED837186FA52B</string>
+				<string>5A95805143A553653FF43B2193D7186D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-RACTDC2016</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-RACTDC2016</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>99C8BAF52D36877847A4152A3342260F</key>
 		<dict>
@@ -4865,32 +4582,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>9DFA7A9451C96947A1979997FEAB93EC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2EFC6FC5D0B92DF77FF05AE59995AD8D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9E243B84BBE8921AD901B06F198D73BD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>9ED343C1CF2651AE4C2A4B5D1089B17B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4976,6 +4667,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>A30ADE10A97C9A271239A541C817FE76</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A36CE2B33425CD8948A55A836EE3BFB0</key>
 		<dict>
 			<key>fileRef</key>
@@ -5012,19 +4716,6 @@
 			<key>files</key>
 			<array>
 				<string>0A9A64157A2C70B60BBEEEEBB10F6608</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A4E8AB4F48613FC8218D1187D1A6D94A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>ACE9C0E56BBDF939FB709D0AAE0B0D6E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXHeadersBuildPhase</string>
@@ -5202,30 +4893,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>A8C0D17133B8363BB668C787A8BF6344</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A95FCD9F233F742D6322B9CE63A7069E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>A9B7A46EE978EEEADF1065D3CC716E1A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5331,20 +4998,6 @@
 			<string>ReactiveCocoa-Private.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ACE9C0E56BBDF939FB709D0AAE0B0D6E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E4CDD681C9AFA26881DEC782AD7D0C51</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>AD62850915A0CACD708D4631ED7950D9</key>
 		<dict>
@@ -5634,17 +5287,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B4887166AF3C4B3FB9D058F04A6DC483</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Result</string>
-			<key>target</key>
-			<string>D02E08439589872996252F4061652195</string>
-			<key>targetProxy</key>
-			<string>37EFEF4B1F5FA379B7D72631A3ACF086</string>
-		</dict>
 		<key>B4D23B7172FEAC796EE8644A5567C0A6</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5657,19 +5299,6 @@
 			<string>UIImagePickerController+RACSignalSupport.h</string>
 			<key>path</key>
 			<string>ReactiveCocoa/Objective-C/UIImagePickerController+RACSignalSupport.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B5940326DCB1687F1E92A3DBF77ACBC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -5835,6 +5464,41 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>BB5E632CA5071B2664FE25787A3C0F4F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Result</string>
+			<key>target</key>
+			<string>D02E08439589872996252F4061652195</string>
+			<key>targetProxy</key>
+			<string>20F67AB275FFA82A50991365CA3FB1A9</string>
+		</dict>
+		<key>BB90BE71E9A74CC599B39FE2ED121DBF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D6022F7659CDBEA19472C616D82F8433</string>
+				<string>1CB948E91DA6435F30E5962EEFFE7E06</string>
+				<string>C35E2EA5EB66D4A27549B602E2FCAE68</string>
+				<string>DDE3E4C45019B53FD6AB961B38965EC0</string>
+				<string>798CF2272E572BA91EAFC7118D63CD7E</string>
+				<string>901E4B5FC22C9E2C3D62F3D164A3F6A6</string>
+				<string>634B0051F5EAE796403685091A261D3C</string>
+				<string>D96192820A4E86066FE7771122764B2F</string>
+				<string>8CC816EDD52B044C04D7B1F644491530</string>
+				<string>FBAB4C2E9C6BB41EADC01780C56FC08E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-RACTDC2016Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-RACTDC2016Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>BBAAAD6BBD302F0749BA8CC445AA9785</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5938,19 +5602,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BF10061442C55B6C41103A9874EAC089</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C09BF0B9872D71B03DB9F9D3BC3A85ED</key>
 		<dict>
 			<key>fileRef</key>
@@ -6017,6 +5668,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C35E2EA5EB66D4A27549B602E2FCAE68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C36ED00B1F0D49F3C661C51EBD71D8C4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6072,6 +5736,17 @@
 			<string>3CC2C2F839CA2DA8F9340E9D5E3D810D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>C583492BC38C3B23FE0B933A4CD5FC2B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Result</string>
+			<key>target</key>
+			<string>D02E08439589872996252F4061652195</string>
+			<key>targetProxy</key>
+			<string>307F1D28B9C894CA757E5F31D385421D</string>
 		</dict>
 		<key>C58534F2BCA85691B0E8F4A756D3F6DC</key>
 		<dict>
@@ -6327,19 +6002,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>C917CCAAF321BA8C9310CCA4038CEA3A</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D02E08439589872996252F4061652195</string>
-			<key>remoteInfo</key>
-			<string>Result</string>
-		</dict>
 		<key>C924F4FE14A2DF37546E9F72CC58A4E2</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -6353,6 +6015,19 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
+		</dict>
+		<key>CA70A5B1650F091E9C948F66DF974D2D</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D02E08439589872996252F4061652195</string>
+			<key>remoteInfo</key>
+			<string>Result</string>
 		</dict>
 		<key>CABDE260668A2528911F81C4893CB81C</key>
 		<dict>
@@ -6446,7 +6121,6 @@
 			<array>
 				<string>5EB1F146311BE0C64BAF773C2601D5D2</string>
 				<string>C78C7ECA8E4A6E35DC1E3EA13FFCE277</string>
-				<string>6EAAB3EE6B96375BA72B78357F88E47F</string>
 				<string>3C064FB1F1BFAB7E7CA5396BB2C510E9</string>
 				<string>0608815F6C95A118BDE0929E0318F57C</string>
 			</array>
@@ -6456,66 +6130,6 @@
 			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CD9C14132FD3142F908D43AD0A640E6C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E44BEA7AB5ED19DE4121ABDE75DE8271</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-RACTDC2016UITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-RACTDC2016UITests/Pods-RACTDC2016UITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_RACTDC2016UITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>CE5CE3B57015D47856CCEFBC28F558C8</key>
 		<dict>
@@ -6799,7 +6413,6 @@
 			<array>
 				<string>34C13CA93414DC208DB1C81DFB5A5F52</string>
 				<string>5B83996074114AA79CC866AB0D3256A9</string>
-				<string>8C6D217CD8E967BEC4BCE28DBE672ADA</string>
 				<string>71A30763753701761542E851D7673201</string>
 				<string>D02E08439589872996252F4061652195</string>
 			</array>
@@ -6899,6 +6512,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>D6022F7659CDBEA19472C616D82F8433</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>D6512425B7D8B6A3F9197315FB4FE979</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6926,19 +6552,6 @@
 			<string>RACChannel.h</string>
 			<key>path</key>
 			<string>ReactiveCocoa/Objective-C/RACChannel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D8D06CEF694AE56F02F772DF2896D49F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -7013,30 +6626,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DB2EFCB4004224BA11DC8A59A080EF5C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5ADC05D5CDF6DA83556EEC13D8428480</string>
-				<string>10F01CD4122B2160776D68ED0ED8CA3D</string>
-				<string>5CC2DFC55A3C64BF7A19CAA690006F47</string>
-				<string>241A29835B27B1B868D6B5BBB8A3BC4E</string>
-				<string>111D9D347C6C7BE9BAA922C65B2B6713</string>
-				<string>13513267FE11A0C40680AD3FBF9B746F</string>
-				<string>7660EAA6BE720C7EA5CE1DE3CDA9DD68</string>
-				<string>53BBE38D703C7E2EA67BC31D8AD7DFF6</string>
-				<string>52E9C261223018E51F4ED837186FA52B</string>
-				<string>5A95805143A553653FF43B2193D7186D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-RACTDC2016</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-RACTDC2016</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>DB45F7667D12507F8B30CDED4CADF9C5</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -7079,6 +6668,19 @@
 			<string>30DCAA726FB8E94D1AF2ADF8432C6C5B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>DDE3E4C45019B53FD6AB961B38965EC0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DE1448FFC3AECE72ADFFC3EE6428B430</key>
 		<dict>
@@ -7339,19 +6941,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E44BEA7AB5ED19DE4121ABDE75DE8271</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E45BCB20B312E580EFD5C5D01D3F322C</key>
 		<dict>
 			<key>fileRef</key>
@@ -7381,25 +6970,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E4CDD681C9AFA26881DEC782AD7D0C51</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-RACTDC2016UITests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E57CE2C946CB63CC6B318090A1C08F57</key>
 		<dict>
 			<key>fileRef</key>
 			<string>DB45F7667D12507F8B30CDED4CADF9C5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>E68CFFDBDBAD0C95E3DE65DF396BB589</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E7073E33F9A744A6BD1A4EFAAF7502DB</key>
 		<dict>
@@ -7421,20 +7010,6 @@
 			<string>90B5041170D07C09F54C7B185D8B9881</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>E97304D96DBB70C3BD3F6CC33EC7673F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>008C6729AB4558E6BE7B302A03F6BE4F</string>
-				<string>CD9C14132FD3142F908D43AD0A640E6C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
 		</dict>
 		<key>EA8C9F5805D3DF14F33F4A6BE6AD4AF7</key>
 		<dict>
@@ -7530,19 +7105,6 @@
 			<string>ReactiveCocoa/Objective-C/NSInvocation+RACTypeParsing.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE4ECC1F3D2E4753BB53F456D0F9EACC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FB63AC05F44033F030377122FBFB689A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>EECA34EC3ED846E5069BB764F3B0D1CE</key>
 		<dict>
@@ -7744,21 +7306,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>F109EDBCAF07F348EAA900486B6B1AE4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DB2EFCB4004224BA11DC8A59A080EF5C</string>
-				<string>8A703E1693FC03003589CC85B9F48CB3</string>
-				<string>64B749CFAA1C196C5172CDC0705B838E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>F10E22A97138A481BCEABDC0A32BC080</key>
 		<dict>
 			<key>fileRef</key>
@@ -7836,6 +7383,17 @@
 			<string>RACCompoundDisposable.m</string>
 			<key>path</key>
 			<string>ReactiveCocoa/Objective-C/RACCompoundDisposable.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F4BC6A4E60F26F92706FD11C4ECF0FD6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-RACTDC2016.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -8061,13 +7619,6 @@
 			<string>ReactiveCocoa/Objective-C/RACTuple.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FB63AC05F44033F030377122FBFB689A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>640E6A37AFAA742FE26A191098E54877</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>FB6A298A238BBB38B10694331B1C1586</key>
 		<dict>

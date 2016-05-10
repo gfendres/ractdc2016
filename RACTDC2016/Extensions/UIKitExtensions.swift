@@ -9,6 +9,7 @@
 
 import UIKit
 import ReactiveCocoa
+import enum Result.NoError
 
 struct AssociationKey {
     static var hidden: UInt8 = 1
@@ -60,6 +61,10 @@ extension UIImageView {
 extension UIButton {
     public var rac_enabled: MutableProperty<Bool> {
         return lazyMutableProperty(self, key: &AssociationKey.enabled, setter: { self.enabled = $0 }, getter: { self.enabled  })
+    }
+    
+    public func rac_touchUpInside() -> SignalProducer<UIButton, NSError> {
+        return self.rac_signalForControlEvents(UIControlEvents.TouchUpInside).toSignalProducer().observeOn(UIScheduler()).map { button in button as! UIButton}
     }
 }
 

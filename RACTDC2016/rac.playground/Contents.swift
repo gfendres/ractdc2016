@@ -76,3 +76,39 @@ let myObserver: Observer<Int,NSError> = Observer<Int,NSError> { event in
     }
 }
 
+struct Beer {
+    var type: String
+    var alcohoolPercent: Float
+    init(beerType: String, percent: Float) {
+        type = beerType
+        alcohoolPercent = percent
+    }
+}
+
+let beers = [Beer(beerType: "Weiss", percent: 5.8),
+             Beer(beerType: "Pilsen", percent: 4.5),
+             Beer(beerType: "RedAle", percent: 7.2),
+             Beer(beerType: "Dunkel", percent: 8.5)]
+
+var strongBeers = [Beer]();
+//Mark: Imperative
+for beer in beers {
+    if beer.alcohoolPercent > 6 {
+        strongBeers.append(beer)
+    }
+}
+print(strongBeers)
+
+var lastBeer: Beer?
+for beer in strongBeers {
+    if beer.alcohoolPercent > lastBeer?.alcohoolPercent {
+        lastBeer = beer
+    }
+}
+print(lastBeer)
+
+//Mark: Declarative
+strongBeers = beers.filter{ $0.alcohoolPercent > 6 }
+beers.sort{ (beer, beer2) in beer.alcohoolPercent > beer2.alcohoolPercent }
+
+print(strongBeers)
